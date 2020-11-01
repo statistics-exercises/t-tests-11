@@ -7,7 +7,7 @@ Now that we know how to calculate the total variance lets try and do a compariso
 
 The test __statistic__ you are going to use for this test is going to be the following:
 
-![](https://render.githubusercontent.com/render/math?math=T=\frac{\frac{1}{n_1}\sum_{i=1}^{n_1}X_i-\frac{1}{n_2}\sum_{j=1}^{n_2}Y_j-\theta_0}{\sqrt{\frac{s^2}{n_1}%2B\frac{s}{n_2}}})
+![](https://render.githubusercontent.com/render/math?math=T=\frac{\frac{1}{n_1}\sum_{i=1}^{n_1}X_i-\frac{1}{n_2}\sum_{j=1}^{n_2}Y_j-\theta_0}{\sqrt{\frac{s^2}{n_1}%2B\frac{s^2}{n_2}}})
 
 where the ![](https://render.githubusercontent.com/render/math?math=X_i) and ![](https://render.githubusercontent.com/render/math?math=Y_j) are the data points from `data1` and `data2` respectively.  ![](https://render.githubusercontent.com/render/math?math=n_1) and ![](https://render.githubusercontent.com/render/math?math=n_2) are the number of elements in these two NumPy arrays and where s is given by:
 
@@ -15,7 +15,7 @@ where the ![](https://render.githubusercontent.com/render/math?math=X_i) and ![]
 
 with ![](https://render.githubusercontent.com/render/math?math=s_1) and ![](https://render.githubusercontent.com/render/math?math=s_2) calculated using:
 
-![](https://render.githubusercontent.com/render/math?math=\frac{n}{n-1}\left[\frac{1}{n}\sum_{i=1}^nX_i^2-\left(\frac{1}{n}\sum_{i=1}^nX_i\right)^2\right])
+![](https://render.githubusercontent.com/render/math?math=s^2=\frac{n}{n-1}\left[\frac{1}{n}\sum_{i=1}^nX_i^2-\left(\frac{1}{n}\sum_{i=1}^nX_i\right)^2\right])
 
 The number of samples the test statistic is computed from is small in this case so it is more appropriate to use a student t-distribution than a normal distribution as the probability distribution that the statistic is a sample from under the assumption of the null hypothesis. 
 
